@@ -9,14 +9,12 @@
 
             <Label 
                 Text="Hello:"
-                Grid.Row="0"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
                 HorizontalOptions="Center" />
 
             <Label 
                 Text="{Binding Name}"
-                Grid.Row="1"
                 SemanticProperties.HeadingLevel="Level1"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I"
                 FontSize="18"
@@ -25,7 +23,6 @@
             <Button 
                 Text="Click to show name on this page"
                 FontAttributes="Bold"
-                Grid.Row="3"
                 SemanticProperties.Hint="Counts the number of times you click"
                 Command="{Binding GetNameCommand}"
                 HorizontalOptions="Center" />
@@ -33,12 +30,18 @@
             <Button 
                 Text="Click to go to name page"
                 FontAttributes="Bold"
-                Grid.Row="3"
                 SemanticProperties.Hint="Counts the number of times you click"
                 Command="{Binding GoToNameCommand}"
                 HorizontalOptions="Center" />
 
-            <Image Grid.Row="4"
+            <Button 
+                Text="Click to go to XAML bound page"
+                FontAttributes="Bold"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Command="{Binding GoToXamlCommand}"
+                HorizontalOptions="Center" />
+
+            <Image 
                 Source="dotnet_bot.png"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 WidthRequest="250"

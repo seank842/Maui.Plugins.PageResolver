@@ -7,7 +7,7 @@ namespace Maui.Plugins.PageResolver
     public static class NavigationExtensions
     {
         /// <summary>
-        /// Resolves a page of type T (must inhetit from ContentPage) and pushes a new instance onto the navigation stack
+        /// Resolves a page of type T (must inherit from ContentPage) and pushes a new instance onto the navigation stack
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="navigation"></param>
@@ -20,7 +20,7 @@ namespace Maui.Plugins.PageResolver
         }
 
         /// <summary>
-        /// Resolves a page of type T (must inhetit from ContentPage) and pushes a new instance onto the navigation stack
+        /// Resolves a page of type T (must inherit from ContentPage) and pushes a new instance onto the navigation stack
         /// </summary>
         /// <typeparam name="T">The type of the page to be resolved</typeparam>
         /// <param name="navigation"></param>
@@ -34,7 +34,7 @@ namespace Maui.Plugins.PageResolver
         }
 
         /// <summary>
-        /// Resolves a page of type T (must inhetit from ContentPage) and pushes a new modal instance onto the navigation stack
+        /// Resolves a page of type T (must inherit from ContentPage) and pushes a new modal instance onto the navigation stack
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="navigation"></param>
@@ -47,7 +47,7 @@ namespace Maui.Plugins.PageResolver
         }
 
         /// <summary>
-        /// Resolves a page of type T (must inhetit from ContentPage) and pushes a new modal instance onto the navigation stack
+        /// Resolves a page of type T (must inherit from ContentPage) and pushes a new modal instance onto the navigation stack
         /// </summary>
         /// <typeparam name="T">The type of the page to be resolved</typeparam>
         /// <param name="navigation"></param>

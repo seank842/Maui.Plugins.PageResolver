@@ -10,6 +10,11 @@ public class XamlBoundViewModel : BaseViewModel
 
     public ICommand UpdateNameCommand => new Command(() => UpdateName());
 
+    public static Type ViewModelType
+    {
+        get { return typeof(XamlBoundViewModel); }
+    }
+
     public XamlBoundViewModel(INameService nameService)
     {
         _nameService = nameService;

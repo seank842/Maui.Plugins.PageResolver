@@ -28,6 +28,13 @@ namespace Maui.Plugins.PageResolver
             return result;
         }
 
+        internal static T ResolveViewModel<T>(T type)
+        {
+            var result = scope.ServiceProvider.GetRequiredService<T>();
+
+            return result;
+        }
+
         internal static IServiceProvider GetServiceProvider()
         {
             return scope.ServiceProvider;

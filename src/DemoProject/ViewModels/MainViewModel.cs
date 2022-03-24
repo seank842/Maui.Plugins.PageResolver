@@ -1,6 +1,4 @@
-﻿using DemoProject.Services;
-using Maui.Plugins.PageResolver;
-using System.Windows.Input;
+﻿using System.Windows.Input;
 
 namespace DemoProject.ViewModels;
 
@@ -11,6 +9,8 @@ public class MainViewModel : BaseViewModel
     public ICommand GetNameCommand => new Command(() => GetName());
 
     public ICommand GoToNameCommand => new Command(async () => await GoToName());
+
+    public ICommand GoToXamlCommand => new Command(async () => await Navigation.PushAsync(new XamlBoundPage()));
 
     public string Name { get; set; }
 
